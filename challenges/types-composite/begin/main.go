@@ -53,6 +53,8 @@ func main() {
 	books := l.lookupByAuthor("Tom")
 
 	// print out the first book's title and its author's name
-	fmt.Println(books[0].title, books[0].author.name)
+	if len(books) != 0 {
+		fmt.Println(books[0].title, books[0].author.name)
+	}
 
 }
